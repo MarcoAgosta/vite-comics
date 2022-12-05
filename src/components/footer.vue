@@ -6,18 +6,25 @@
                     <div class="col-4">
                         <h5 class="white">DC COMICS</h5>
                         <ul class="lista">
-                            <li class="gray" v-for="oggetto in listaDc">{{ oggetto }}</li>
+                            <li v-for="oggetto in listaDc"><a class="gray" href="#">{{ oggetto }}</a></li>
                         </ul>
                         <h5 class="white">SHOP</h5>
                         <ul class="lista">
-                            <li class="gray" v-for="oggetto in listaShop">{{ oggetto }}</li>
+                            <li v-for="oggetto in listaShop"><a class="gray" href="#">{{ oggetto }}</a></li>
                         </ul>
                     </div>
 
                     <div class="col-4">
                         <h5 class="white">DC</h5>
                         <ul class="lista">
-                            <li class="gray" v-for="oggetto in listaD">{{oggetto}}</li>
+                            <li v-for="oggetto in listaD"><a class="gray" href="#">{{oggetto}}</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-4">
+                        <h5 class="white">SITES</h5>
+                        <ul class="lista">
+                            <li v-for="oggetto in listaSites"><a class="gray" href="#">{{oggetto}}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -64,6 +71,13 @@ export default {
                 "footer-pinterest.png",
                 "footer-twitter.png",
                 "footer-youtube.png"
+            ],
+            listaSites:[
+                "DC",
+                "MAD Magazine",
+                "DC Kids",
+                "DC Universe",
+                "DC Power Visa"
             ]
         }
     }
@@ -80,7 +94,8 @@ export default {
 }
 
 .gray {
-    color: gray
+    color: gray;
+    text-decoration: none;
 }
 
 .lista {
@@ -90,7 +105,7 @@ export default {
 
 .sfondo-dc {
     width: 100%;
-    transform: translate(0, -20%);
+    transform: translate(15%, -20%);
 }
 
 .background-gray {

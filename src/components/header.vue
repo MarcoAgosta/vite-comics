@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-white">
+    <nav class="navbar navbar-expand-lg bg-white navbar-dc">
         <div class="container">
 
             <a class="navbar-brand" href="#">
@@ -41,3 +41,12 @@ export default {
     },
 }
 </script>
+
+<style scoped lang="scss">
+
+.navbar-dc{
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+</style>
