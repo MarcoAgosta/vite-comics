@@ -3,12 +3,12 @@
         <div class="pt-5 container position-relative">
 
             <div class="position-absolute serie">
-                <h5 class="white ">CURRENT SERIES</h5>
+                <h5 class="white m-0">CURRENT SERIES</h5>
             </div>
 
             <div class="row g-5">
 
-                <div class="col-2" v-for="fumetto in listaFumetti">
+                <div class="col-xl-2 col-3" v-for="fumetto in listaFumetti">
                     <div class="carta">
                         <img class="img-comic mb-3" :src="fumetto.thumb" alt="">
                         <span class="white">{{ fumetto.series }}</span>
